@@ -1,0 +1,44 @@
+D:\oracle\product\11.2.0\dbhome_1\database
+
+
+create temporary tablespace TMP_NETOPT
+     tempfile 'D:\oracle\oradata\orcl\TMP_NETOPT.dbf'
+         size 10240m
+             autoextend on;
+             
+create tablespace NETOPT
+     datafile 'D:\oracle\oradata\orcl\NETOPT.dbf'
+         size 20480m
+             autoextend on;
+             
+             
+create user netopt identified by hcxt
+     account unlock
+         default tablespace NETOPT
+         temporary tablespace TMP_NETOPT;
+
+
+grant connect,resource,dba to netopt;
+
+
+update KPIMINUTE_20180213 set eu0103 = null where eu0103 = '\N';
+update KPIMINUTE_20180213 set eu0113 = null where eu0113 = '\N';
+update KPIMINUTE_20180213 set eu0122 = null where eu0122 = '\N';
+update KPIMINUTE_20180213 set eu0201 = null where eu0201 = '\N';
+update KPIMINUTE_20180213 set eu0205 = null where eu0205 = '\N';
+update KPIMINUTE_20180213 set eu0223 = null where eu0223 = '\N';
+update KPIMINUTE_20180213 set eu0306 = null where eu0306 = '\N';
+update KPIMINUTE_20180213 set eu0317 = null where eu0317 = '\N';
+update KPIMINUTE_20180213 set eu0505 = null where eu0505 = '\N';
+update KPIMINUTE_20180213 set eu0506 = null where eu0506 = '\N';
+update KPIMINUTE_20180213 set eu0529 = null where eu0529 = '\N';
+update KPIMINUTE_20180213 set eu0530 = null where eu0530 = '\N';
+update KPIMINUTE_20180213 set eu0531 = null where eu0531 = '\N';
+update KPIMINUTE_20180213 set eu0532 = null where eu0532 = '\N';
+update KPIMINUTE_20180213 set eu0537 = null where eu0537 = '\N';
+update KPIMINUTE_20180213 set eu0538 = null where eu0538 = '\N';
+update KPIMINUTE_20180213 set eu0539 = null where eu0539 = '\N';
+update KPIMINUTE_20180213 set eu0542 = null where eu0542 = '\N';
+update KPIMINUTE_20180213 set eu0543 = null where eu0543 = '\N';
+update KPIMINUTE_20180213 set sd0001 = null where sd0001 = '\N';
+update KPIMINUTE_20180213 set sd0002 = null where sd0002 = '\N';
