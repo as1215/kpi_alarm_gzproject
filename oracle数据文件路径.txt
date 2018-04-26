@@ -20,6 +20,7 @@ create user netopt identified by hcxt
 
 grant connect,resource,dba to netopt;
 
+111111
 
 update KPIMINUTE_20180213 set eu0103 = null where eu0103 = '\N';
 update KPIMINUTE_20180213 set eu0113 = null where eu0113 = '\N';
